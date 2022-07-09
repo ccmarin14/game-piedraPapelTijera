@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/selection.css">
+  <link rel="stylesheet" href="./styles/rules.css">
+  <link rel="stylesheet" href="./styles/score.css">
+  <link rel="stylesheet" href="./styles/game.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet"> 
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg">
+    <div class="containerScore">
+      <p>SCORE</p>
+      <span class="score" id="score">0</span>
+    </div>
+  </header>
+  <section class="containerSelect">
+    <div class="selection setOne">
+      <img src="./images/icon-rock.svg">
+    </div>
+    <div class="selection setTwo">
+      <img src="./images/icon-paper.svg">
+    </div>
+    <div class="selection setThree">
+      <img src="./images/icon-scissors.svg">
+    </div>
+    <img src="./images/bg-triangle.svg">
+  </section>
+  <section class="containerTable">
+    <div class="players">
+      <div class="selection__player">
+        <span>YOU PICKED</span>
+        <div class="player rock active">
+          <img src="./images/icon-rock.svg">
+        </div>
+        <div class="player papper">
+          <img src="./images/icon-paper.svg">
+        </div>
+        <div class="player scissors">
+          <img src="./images/icon-scissors.svg">
+        </div>
+      </div>
+      <div class="result">
+        <span>YOU LOSE</span>
+        <input type="button" value="PLAY AGAIN">
+      </div>
+      <div class="selection__computer">
+        <span>THE HOUSE PICKED</span>
+        <div class="computer none">
+        </div>
+        <div class="computer rock">
+          <img src="./images/icon-rock.svg">
+        </div>
+        <div class="computer papper">
+          <img src="./images/icon-paper.svg">
+        </div>
+        <div class="computer scissors">
+          <img src="./images/icon-scissors.svg">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="containerRules">
+    <div>
+      <span>RULES</span>
+      <img class="close" id="close" src="./images/icon-close.svg">
+      <img class="rules" src="./images/image-rules.svg">
+    </div>
+  </section>
+  <footer>
+    <input class="button-rules" id="rules" type="button" value="RULES">
+  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Cristian Camilo Marin</a>.
+  </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+:root {
+    /*Colors*/
+
+    /*Primary*/
+    --ScissorsGradientInit: hsl(39, 85%, 41%);
+    --ScissorsGradientEnd: hsl(40, 84%, 53%);
+    --PaperGradientInit: hsl(230, 52%, 42%); 
+    --PaperGradientEnd: hsl(230, 89%, 65%);
+    --RockGradientInit: hsl(349, 50%, 39%); 
+    --RockGradientEnd: hsl(349, 70%, 56%);
+    --LizardGradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%);
+    --CyanInit: hsl(189, 59%, 53%); 
+    --CyanEnd: hsl(189, 58%, 57%);
+    
+    /*Neutral*/
+    --DarkText: hsl(229, 25%, 31%);
+    --ScoreText: hsl(229, 64%, 46%);
+    --HeaderOutline: hsl(217, 16%, 45%);
+    
+    /*Background*/
+    --RadialGradientInit: hsl(214, 47%, 23%);
+    --RadialGradientEnd: hsl(237, 49%, 15%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-width: 360px;
+    font-weight: 700;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background: radial-gradient(var(--RadialGradientInit) 30%,var(--RadialGradientEnd));
+}
+
+.title {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+
+.option {
+    display: block;
+    margin: 2vh 30px;
+    padding: 1em 1em;
+    border-radius: 10px;
+    outline: solid 4px var(--HeaderOutline);
+    font-size: 35px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.option:active {
+    outline: solid 5px white;
+}
+
+.option:active, .option:hover {
+    color: var(--CyanEnd);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 15px;
+    font-size: 11px; text-align: center;
+    color: var(--lightCyan)
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

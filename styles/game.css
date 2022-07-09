@@ -1,0 +1,111 @@
+.players {
+    display: none;
+    /*display: flex;*/
+    flex-wrap: wrap;
+    width: 50vw;
+    padding: 10vh 0 10vh 0;
+    justify-content: space-around;
+}
+
+.active {
+    display: inline-block !important;
+}
+
+.selection__player * , .selection__computer * {
+    display: block;
+}
+
+.selection__player span , .selection__computer span {
+    margin-bottom: 3vw;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.computer, .player {
+    position: relative;
+    border-radius: 50em;
+    border: 20px solid transparent;
+    background-color: white;
+}
+
+.computer img, .player img {
+    padding: 50px;
+    width: 170px;
+    height: 170px;
+}
+
+.none {
+    display: inline-block !important;
+    margin: 30px;
+    padding: 50px;
+    background-color: var(--RadialGradientEnd);
+}
+
+
+.rock {
+    border-color: var(--RockGradientEnd);
+    box-shadow: 
+        inset 0 6px 2px rgb(180, 179, 179), 
+        0 6px 0 var(--RockGradientInit);
+}
+
+.papper {
+    border-color: var(--PaperGradientEnd);
+    box-shadow: 
+        inset 0px 6px 2px rgb(180, 179, 179), 
+        0px 6px 0px var(--PaperGradientInit);
+}
+
+.scissors {
+    border-color: var(--ScissorsGradientEnd);
+    box-shadow: 
+        inset 0px 6px 2px rgb(180, 179, 179), 
+        0px 6px 0px var(--ScissorsGradientInit);
+}
+
+.win::before {
+    content: "";
+    position: absolute;
+    padding: 100px;
+    top: -18px;
+    left: -18px;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    box-shadow: 
+        0 0 0 50px hsla(0, 0%, 80%, .03), 
+        0 0 0 105px hsla(0, 0%, 80%, .04),
+        0 0 0 160px hsla(0, 0%, 80%, .05);
+}
+
+.result {
+    display: none;
+    margin: auto;
+    text-align: center;
+}
+
+.result span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 40px;
+    color: white;
+}
+
+.result input {
+    background: white;
+    padding: 0.5em 3em;
+    border: none;
+    border-radius: 5px;
+    color: rgb(212, 87, 87);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.player {
+    display: none;
+}
+
+.computer {
+    display: none;
+}

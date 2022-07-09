@@ -1,0 +1,70 @@
+body *::after {
+    opacity: .5;
+}
+
+.containerSelect {
+    display: flex;
+    margin-top: 20vh;
+    background-image: url("../images/bg-triangle.svg") no-repeat;
+}
+
+.selection {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    border-radius: 50em;
+    border: 14px solid transparent;
+    background-color: white;
+}
+
+.selection img {
+    padding: 25px;
+}
+
+.setOne {
+    margin-top: 140px;
+    margin-left: 90px;
+    border-color: var(--RockGradientEnd);
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--RockGradientInit);
+}
+
+.setOne:hover {
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--RockGradientInit), 0px 6px 10px white;
+}
+
+.setTwo {
+    margin-top: -50px;
+    margin-left: -20px;
+    border-color: var(--PaperGradientEnd);
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--PaperGradientInit);
+}
+
+.setTwo:hover {
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--PaperGradientInit), 0px 6px 10px white;
+}
+
+.setThree {
+    margin-top: -50px;
+    margin-left: 210px;
+    border-color: var(--ScissorsGradientEnd);
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--ScissorsGradientInit);
+}
+
+.setThree:hover {
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--ScissorsGradientInit), 0px 6px 10px white;
+}
+
+.containerRules *, .containerRules {
+    opacity: 1 !important;
+}
+
+.containerRules {
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 28px;
+}
