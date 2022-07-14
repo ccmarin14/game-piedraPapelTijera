@@ -1,7 +1,22 @@
+.containerRules {
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 28px;
+}
+
+.containerRules span {
+    color: var(--DarkText);
+}
+
 .close {
     position: absolute;
     margin-top: 5px;
     margin-left: 170px;
+    cursor: pointer;
 }
 
 .rules {
@@ -23,4 +38,9 @@ footer {
     border-radius: 5px;
     color: white;
     font-weight: 600;
+    cursor: pointer;
+}
+
+.button-rules:active {
+    background-color: rgba(209, 209, 209,0.5);
 }

@@ -1,6 +1,5 @@
 .players {
     display: none;
-    /*display: flex;*/
     flex-wrap: wrap;
     width: 50vw;
     padding: 10vh 0 10vh 0;

@@ -34,6 +34,7 @@ body {
     background: radial-gradient(var(--RadialGradientInit) 30%,var(--RadialGradientEnd));
 }
 
+
 .title {
     color: white;
     font-size: 50px;
