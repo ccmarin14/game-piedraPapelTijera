@@ -1,7 +1,7 @@
 .players {
     display: none;
     flex-wrap: wrap;
-    width: 50vw;
+    width: 60vw;
     padding: 10vh 0 10vh 0;
     justify-content: space-around;
 }
@@ -23,6 +23,7 @@
 }
 
 .computer, .player {
+    display: none;
     position: relative;
     border-radius: 50em;
     border: 20px solid transparent;
@@ -80,7 +81,7 @@
 
 .result {
     display: none;
-    margin: auto;
+    margin: 8em 3em 0 3em;
     text-align: center;
 }
 
@@ -93,18 +94,10 @@
 
 .result input {
     background: white;
-    padding: 0.5em 3em;
+    padding: .8em 4em;
     border: none;
     border-radius: 5px;
     color: rgb(212, 87, 87);
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
-}
-
-.player {
-    display: none;
-}
-
-.computer {
-    display: none;
 }

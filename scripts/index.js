@@ -15,4 +15,13 @@ const $computer = document.querySelectorAll(".computer");
 
 $containerSelect.addEventListener("click", startGame);
 
+const $result = document.querySelector(".result");
+const $score = document.querySelector(".containerScore");
 
+const $again = document.querySelector(".again");
+
+$again.addEventListener("click", playAgain);
+
+let you = 0;
+let house = 0;
+let contador = 0;
