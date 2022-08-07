@@ -26,7 +26,7 @@
     display: none;
     position: relative;
     border-radius: 50em;
-    border: 20px solid transparent;
+    border: 18px solid transparent;
     background-color: white;
 }
 
@@ -100,4 +100,34 @@
     color: rgb(212, 87, 87);
     font-weight: 700;
     cursor: pointer;
+}
+
+@media (max-width: 450px) {
+    .players {
+        width: 100vw;
+        padding-bottom: 0;
+    }
+
+    .computer img, .player img {
+        width: 100px;
+        height: 100px;
+        padding: 30px;
+    }
+
+    .none {
+        padding: 30px;
+    }
+
+    .result {
+        margin: 8em 3em 0 3em;
+        order: 1;
+    }
+
+    .win::before {
+        padding: 65px;
+        box-shadow: 
+            0 0 0 30px hsla(0, 0%, 80%, .03), 
+            0 0 0 65px hsla(0, 0%, 80%, .04),
+            0 0 0 100px hsla(0, 0%, 80%, .05);
+    }
 }

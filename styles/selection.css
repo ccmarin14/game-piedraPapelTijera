@@ -1,21 +1,22 @@
 .containerSelect {
     display: flex;
     margin-top: 20vh;
-    background-image: url("../images/bg-triangle.svg");
     pointer-events: none;
 }
 
+
 .selection {
     position: absolute;
-    width: 130px;
-    height: 130px;
+    width: 8em;
+    height: 8em;
     text-align: center;
     border-radius: 50em;
     border: 14px solid transparent;
     background-color: white;
+    cursor: pointer;
 }
 
-.selection img {
+.selection img { 
     padding: 25px;
     pointer-events: all;
 }
@@ -51,4 +52,28 @@
 
 .setThree:hover {
     box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--ScissorsGradientInit), 0px 6px 10px white;
+}
+
+
+@media (max-width: 450px) {
+
+    .triangle {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .setOne {
+        margin-top: 120px;
+        margin-left: 90px;
+    }
+    
+    .setTwo {
+        margin-top: -50px;
+        margin-left: 0px;
+    }
+    
+    .setThree {
+        margin-top: -50px;
+        margin-left: 190px;
+    }
 }

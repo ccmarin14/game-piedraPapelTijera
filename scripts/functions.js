@@ -21,7 +21,6 @@ const toggleRules = () => {
 
 const startGame = async(e) => {
     $containerSelect.style.display = "none";
-    $buttonRules.style.display = "none";
     $players.style.display = "flex";
     if (e.target.parentElement.classList.contains("setOne")) {
         you = 0;
@@ -77,5 +76,4 @@ const playAgain = () => {
     $result.style.display = "none";
     $players.style.display = "none";
     $containerSelect.style.display = "flex";
-    $buttonRules.style.display = "inline-block";
 }

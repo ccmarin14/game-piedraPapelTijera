@@ -44,3 +44,34 @@ footer {
 .button-rules:active {
     background-color: rgba(209, 209, 209,0.5);
 }
+
+@media (max-width: 450px) {
+    .containerRules {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .containerRules div{
+        width: 100%;
+    }
+
+    .containerRules span {
+        display: block;
+        margin-top: 2em;
+        margin-bottom: 3em;
+        text-align: center;
+    }
+    
+    .close {
+        display: block;
+        position: absolute;
+        bottom: 3em;
+    }
+
+    footer {
+        position: relative;
+        right: 0px;
+        bottom: -80px;
+        padding: 0 auto;
+    }
+}
