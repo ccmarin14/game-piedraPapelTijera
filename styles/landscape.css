@@ -21,6 +21,8 @@
 @media (max-height: 500px) and (orientation: landscape) {
     .containerLandscape {
         display: inline-block;
+        width: 100vw;
+        
     }
     .button-rules {
         display: none;

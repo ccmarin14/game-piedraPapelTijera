@@ -1,7 +1,7 @@
 .players {
     display: none;
     flex-wrap: wrap;
-    width: 60vw;
+    width: 70vw;
     padding: 10vh 0 10vh 0;
     justify-content: space-around;
 }
@@ -81,7 +81,7 @@
 
 .result {
     display: none;
-    margin: 8em 3em 0 3em;
+    margin: 8em 2em 0 2em;
     text-align: center;
 }
 
@@ -102,9 +102,10 @@
     cursor: pointer;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1000px) {
     .players {
-        width: 100vw;
+        width: 100%;
+        max-width: 550px;
         padding-bottom: 0;
     }
 

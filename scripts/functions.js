@@ -54,6 +54,7 @@ const calculateResult = () => {
     } else if ((house == 0 && you == 2) || (house == 1 && you == 0) || (house == 2 && you == 1)) {
         $result.firstElementChild.innerHTML = "YOU LOSE";
         contador = 0;
+        localStorage.setItem("score", contador);
         $score.children[1].innerHTML = contador;
         $active[1].classList.add("win");
     }
@@ -61,7 +62,8 @@ const calculateResult = () => {
 }
 
 const addScore = () => {
-    contador += 1;
+    contador = parseInt(contador) + 1;
+    localStorage.setItem("score", contador);
     $score.children[1].innerHTML = contador;
 }
 

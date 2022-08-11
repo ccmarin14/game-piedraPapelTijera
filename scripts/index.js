@@ -17,11 +17,11 @@ $containerSelect.addEventListener("click", startGame);
 
 const $result = document.querySelector(".result");
 const $score = document.querySelector(".containerScore");
-
 const $again = document.querySelector(".again");
 
 $again.addEventListener("click", playAgain);
 
 let you = 0;
 let house = 0;
-let contador = 0;
+let contador = (localStorage.getItem("score")) ? localStorage.getItem("score") : 0;
+$score.children[1].innerHTML = contador;
