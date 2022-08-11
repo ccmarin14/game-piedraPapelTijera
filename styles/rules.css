@@ -67,10 +67,16 @@ footer {
         bottom: 3em;
     }
 
+    .button-rules {
+        padding: 0.3em 3em;
+        font-weight: 500;
+    }
+
     footer {
         position: relative;
         right: 0px;
-        bottom: -80px;
+        bottom: -6%;
         padding: 0 auto;
     }
+    
 }
