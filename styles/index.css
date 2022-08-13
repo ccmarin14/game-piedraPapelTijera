@@ -3,14 +3,15 @@
 
     /*Primary*/
     --ScissorsGradientInit: hsl(39, 85%, 41%);
-    --ScissorsGradientEnd: hsl(40, 84%, 53%);
+    --ScissorsGradientEnd: hsl(40, 97%, 57%);
     --PaperGradientInit: hsl(230, 52%, 42%); 
     --PaperGradientEnd: hsl(230, 89%, 65%);
-    --RockGradientInit: hsl(349, 50%, 39%); 
-    --RockGradientEnd: hsl(349, 70%, 56%);
-    --LizardGradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%);
-    --CyanInit: hsl(189, 59%, 53%); 
-    --CyanEnd: hsl(189, 58%, 57%);
+    --RockGradientInit: hsl(349, 71%, 45%); 
+    --RockGradientEnd: hsl(349, 89%, 63%);
+    --LizardGradientInit: hsl(261, 68%, 55%);
+    --LizardGradientEnd: hsl(261, 96%, 69%);
+    --SpockGradientInit: hsl(189, 54%, 48%); 
+    --SpockGradientEnd: hsl(189, 78%, 65%);
     
     /*Neutral*/
     --DarkText: hsl(229, 25%, 31%);
@@ -60,7 +61,7 @@ body {
 }
 
 .option:active, .option:hover {
-    color: var(--CyanEnd);
+    color: var(--SpockGradientEnd);
 }
 
 .attribution {
@@ -68,8 +69,8 @@ body {
     bottom: 0px;
     margin-bottom: 15px;
     font-size: 11px; text-align: center;
-    color: var(--lightCyan)
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%);
 }

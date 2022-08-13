@@ -2,7 +2,8 @@
     display: none;
     position: absolute;
     width: 300px;
-    padding: 20px 20px;
+    padding: 30px 30px;
+    border-radius: 10px;
     background-color: white;
     font-size: 28px;
 }
@@ -14,14 +15,14 @@
 .close {
     position: absolute;
     margin-top: 5px;
-    margin-left: 170px;
+    margin-left: 150px;
     cursor: pointer;
 }
 
 .rules {
     display: block;
     width: 100%;
-    padding: 30px 10px 0px 10px;
+    padding: 15px 10px 0px 10px;
 }
 
 footer {
@@ -48,6 +49,7 @@ footer {
     .containerRules {
         width: 100vw;
         height: 100vh;
+        border-radius: 0;
     }
 
     .containerRules div{

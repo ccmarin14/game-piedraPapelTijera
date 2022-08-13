@@ -1,0 +1,107 @@
+.containerSelect {
+    display: flex;
+    margin-top: 13vh;
+    pointer-events: none;
+}
+
+.selection {
+    position: absolute;
+    width: 6.5em;
+    height: 6.5em;
+    text-align: center;
+    border-radius: 50em;
+    border: 12px solid transparent;
+    background-color: white;
+    cursor: pointer;
+}
+
+.selection img { 
+    padding: 22px;
+    pointer-events: all;
+    width: 100%;
+    height: 110%;
+}
+
+.pentagon {
+    width: 80%;
+    margin: auto;
+}
+
+.setOne {
+    margin-top: 180px;
+    margin-left: 180px;
+    border-color: var(--RockGradientEnd);
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--RockGradientInit);
+}
+
+.setOne:hover {
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--RockGradientInit), 0px 6px 10px white;
+}
+
+.setTwo {
+    margin-top: 50px;
+    margin-left: 230px;
+    border-color: var(--PaperGradientEnd);
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--PaperGradientInit);
+}
+
+.setTwo:hover {
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--PaperGradientInit), 0px 6px 10px white;
+}
+
+.setThree {
+    margin-top: -40px;
+    margin-left: 105px;
+    border-color: var(--ScissorsGradientEnd);
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--ScissorsGradientInit);
+}
+
+.setThree:hover {
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--ScissorsGradientInit), 0px 6px 10px white;
+}
+
+.setFour {
+    margin-top: 50px;
+    margin-left: -20px;
+    border-color: var(--SpockGradientEnd);
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--SpockGradientInit);
+}
+
+.setFour:hover {
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--SpockGradientInit), 0px 6px 10px white;
+}
+
+.setFive {
+    margin-top: 180px;
+    margin-left: 30px;
+    border-color: var(--LizardGradientEnd);
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--LizardGradientInit);
+}
+
+.setFive:hover {
+    box-shadow: inset 0px 6px 2px rgb(180, 179, 179), 0px 6px 0px var(--LizardGradientInit), 0px 6px 10px white;
+}
+
+
+@media (max-width: 450px) {
+
+    .pentagon {
+        width: 60%;
+        margin: auto;
+    }
+    
+    .setOne {
+        margin-top: 120px;
+        margin-left: 90px;
+    }
+    
+    .setTwo {
+        margin-top: -50px;
+        margin-left: 0px;
+    }
+    
+    .setThree {
+        margin-top: -50px;
+        margin-left: 190px;
+    }
+}

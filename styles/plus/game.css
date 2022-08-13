@@ -1,0 +1,132 @@
+.players {
+    display: none;
+    flex-wrap: wrap;
+    width: 70vw;
+    padding: 8vh 0;
+    justify-content: space-around;
+}
+
+.active {
+    display: inline-block !important;
+}
+
+.selection__player * , .selection__computer * {
+    display: block;
+}
+
+.selection__player span , .selection__computer span {
+    margin-bottom: 3vw;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.computer, .player {
+    display: none;
+    position: relative;
+    border-radius: 50em;
+    border: 10px solid transparent;
+    background-color: white;
+}
+
+.computer img, .player img {
+    padding: 20px;
+}
+
+.none {
+    display: inline-block !important;
+    margin: 30px;
+    padding: 50px;
+    background-color: var(--RadialGradientEnd);
+}
+
+
+.rock {
+    border-color: var(--RockGradientEnd);
+    box-shadow: 
+        inset 0 6px 2px rgb(180, 179, 179), 
+        0 6px 0 var(--RockGradientInit);
+}
+
+.papper {
+    border-color: var(--PaperGradientEnd);
+    box-shadow: 
+        inset 0px 6px 2px rgb(180, 179, 179), 
+        0px 6px 0px var(--PaperGradientInit);
+}
+
+.scissors {
+    border-color: var(--ScissorsGradientEnd);
+    box-shadow: 
+        inset 0px 6px 2px rgb(180, 179, 179), 
+        0px 6px 0px var(--ScissorsGradientInit);
+}
+
+.win::before {
+    content: "";
+    position: absolute;
+    padding: 100px;
+    top: -18px;
+    left: -18px;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    box-shadow: 
+        0 0 0 50px hsla(0, 0%, 80%, .03), 
+        0 0 0 105px hsla(0, 0%, 80%, .04),
+        0 0 0 160px hsla(0, 0%, 80%, .05);
+}
+
+.result {
+    display: none;
+    margin: 8em 2em 0 2em;
+    text-align: center;
+}
+
+.result span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 40px;
+    color: white;
+}
+
+.result input {
+    background: white;
+    padding: .8em 4em;
+    border: none;
+    border-radius: 5px;
+    color: rgb(212, 87, 87);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .players {
+        width: 100%;
+        max-width: 550px;
+        padding-bottom: 0;
+    }
+
+    .computer img, .player img {
+        width: 100px;
+        height: 100px;
+        padding: 30px;
+    }
+
+    .none {
+        padding: 30px;
+    }
+
+    .result {
+        margin: 12% 3em 0 3em;
+        order: 1;
+    }
+
+    .win::before {
+        padding: 65px;
+        box-shadow: 
+            0 0 0 30px hsla(0, 0%, 80%, .03), 
+            0 0 0 65px hsla(0, 0%, 80%, .04),
+            0 0 0 100px hsla(0, 0%, 80%, .05);
+    }
+}

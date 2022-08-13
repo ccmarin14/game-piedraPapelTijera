@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 55vw;
+    min-width: 330px;
+    margin-top: -20vh;
+    padding: 0.7em 1em;
+    border: solid 3px var(--HeaderOutline);
+    border-radius: 10px;
+}
+
+header img {
+    width: 10vw;
+    min-width: 80px;
+    height: 18vh;
+    min-height: 80px;
+    object-fit: contain;
+}
+
+.containerScore {
+    padding: 2vh 6%;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.containerScore p {
+    color: var(--ScoreText);
+    font-size: 1.3em;
+    font-weight: 100;
+}
+
+.score {
+    display: inline-block;
+    font-size: 3.5em;
+    font-weight: 500;
+    color: var(--DarkText);
+}
