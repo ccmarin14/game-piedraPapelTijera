@@ -28,7 +28,11 @@ const startGame = async(e) => {
         you = 1;
     } else if (e.target.parentElement.classList.contains("setThree")) {
         you = 2;
-    }
+    } else if (e.target.parentElement.classList.contains("setFour")) {
+        you = 3;
+    } else if (e.target.parentElement.classList.contains("setFive")) {
+        you = 4;
+    } 
     $player[you].classList.add("active");
     setTimeout(function() {
         computerSelect();
@@ -36,22 +40,23 @@ const startGame = async(e) => {
 }
 
 const computerSelect = () => {
-    let aleatorio = Math.floor(Math.random() * 3);
+    let aleatorio = Math.floor(Math.random() * 5);
     $computer[0].classList.remove("none");
     $computer[aleatorio + 1].classList.add("active");
     house = aleatorio;
-    calculateResult();
+    displayResult();
 }
 
-const calculateResult = () => {
+const displayResult = () => {
     let $active = document.querySelectorAll(".active");
-    if (you == house) {
+    let result = calculateResult(you,house);
+    if (result == "match") {
         $result.firstElementChild.innerHTML = "MATCHED";
-    } else if ((you == 0 && house == 2) || (you == 1 && house == 0) || (you == 2 && house == 1)) {
+    } else if (result == "win") {
         $result.firstElementChild.innerHTML = "YOU WIN";
         $active[0].classList.add("win");
         addScore();
-    } else if ((house == 0 && you == 2) || (house == 1 && you == 0) || (house == 2 && you == 1)) {
+    } else if (result == "lose") {
         $result.firstElementChild.innerHTML = "YOU LOSE";
         contador = 0;
         localStorage.setItem("score", contador);
@@ -69,7 +74,6 @@ const addScore = () => {
 
 const playAgain = () => {
     let $active = document.querySelectorAll(".active");
-
     $active[0].classList.remove("win");
     $active[1].classList.remove("win");
     $computer[house + 1].classList.remove("active");
@@ -78,4 +82,30 @@ const playAgain = () => {
     $result.style.display = "none";
     $players.style.display = "none";
     $containerSelect.style.display = "flex";
+}
+
+const calculateResult = (you,house) => {
+    let result;
+    if (house == you) {
+        result = "match"
+    } else {
+        switch (you) {
+            case 0:
+                result = (house == 2 || house == 4) ? "win" : "lose";
+                break;
+            case 1:
+                result = (house == 0 || house == 3) ? "win" : "lose";
+                break;
+            case 2:
+                result = (house == 1 || house == 4) ? "win" : "lose";
+                break;
+            case 3:
+                result = (house == 2 || house == 0) ? "win" : "lose";
+                break;
+            case 4:
+                result = (house == 3 || house == 1) ? "win" : "lose";
+                break;
+        }
+    }
+    return result;
 }

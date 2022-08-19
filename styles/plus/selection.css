@@ -1,6 +1,7 @@
 .containerSelect {
     display: flex;
     margin-top: 13vh;
+    margin-bottom: 13vh;
     pointer-events: none;
 }
 
@@ -91,17 +92,27 @@
     }
     
     .setOne {
-        margin-top: 120px;
-        margin-left: 90px;
+        margin-top: 150px;
+        margin-left: 180px;
     }
     
     .setTwo {
-        margin-top: -50px;
-        margin-left: 0px;
+        margin-top: 25px;
+        margin-left: 210px;
     }
     
     .setThree {
-        margin-top: -50px;
-        margin-left: 190px;
+        margin-top: -60px;
+        margin-left: 105px;
+    }
+
+    .setFour {
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+
+    .setFive {
+        margin-top: 150px;
+        margin-left: 40px;
     }
 }

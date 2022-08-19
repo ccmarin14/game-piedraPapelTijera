@@ -67,6 +67,8 @@ footer {
         display: block;
         position: absolute;
         bottom: 3em;
+        left: 50%;
+        margin-left: -10px;
     }
 
     .button-rules {
