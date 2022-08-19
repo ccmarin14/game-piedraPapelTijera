@@ -1,7 +1,6 @@
 .containerSelect {
     display: flex;
     margin-top: 13vh;
-    margin-bottom: 13vh;
     pointer-events: none;
 }
 
@@ -85,6 +84,10 @@
 
 
 @media (max-width: 450px) {
+
+    .containerSelect {
+        margin-bottom: 13vh;
+    }
 
     .pentagon {
         width: 60%;
