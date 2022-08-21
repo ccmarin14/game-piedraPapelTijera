@@ -65,8 +65,8 @@ footer {
     
     .close {
         display: block;
-        margin: 0 auto;
-        bottom: 3em;
+        position: absolute;
+        bottom: 3.5em;
         left: 50%;
         margin-left: -10px;
     }
