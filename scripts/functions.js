@@ -19,6 +19,11 @@ const toggleRules = () => {
     }
 }
 
+const selectGame = (e) => {
+    selectgame = e.target.children[0].value;
+    localStorage.setItem("game", selectgame);
+}
+
 const startGame = async(e) => {
     $containerSelect.style.display = "none";
     $players.style.display = "flex";
@@ -35,12 +40,13 @@ const startGame = async(e) => {
     } 
     $player[you].classList.add("active");
     setTimeout(function() {
-        computerSelect();
+        computerSelect(localStorage.getItem("game"));
     },1000);
 }
 
-const computerSelect = () => {
-    let aleatorio = Math.floor(Math.random() * 5);
+const computerSelect = (game) => {
+    let cant = (game == 1) ? 3 : 5;
+    let aleatorio = Math.floor(Math.random() * cant);
     $computer[0].classList.remove("none");
     $computer[aleatorio + 1].classList.add("active");
     house = aleatorio;
