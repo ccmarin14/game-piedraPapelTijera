@@ -1,0 +1,106 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Cristian Marin"
+    },
+    {
+      "id": 2,
+      "name": "Celeste"
+    },
+    {
+      "id": 3,
+      "name": "Carolina"
+    },
+    {
+      "id": 4,
+      "name": "Yaneth"
+    },
+    {
+      "id": 5,
+      "name": "AAA"
+    },
+    {
+      "id": 6,
+      "name": "AAA"
+    },
+    {
+      "id": 7,
+      "name": "AAA"
+    },
+    {
+      "id": 8,
+      "name": "AAA"
+    },
+    {
+      "id": 9,
+      "name": "AAA"
+    },
+    {
+      "id": 10,
+      "name": "AAA"
+    }
+  ],
+  "scores": [
+    {
+      "id": 1,
+      "score": 10,
+      "date": "14/02/2022",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "score": 14,
+      "date": "03/12/2022",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "score": 11,
+      "date": "31/10/2022",
+      "userId": 3
+    },
+    {
+      "id": 4,
+      "score": 15,
+      "date": "14/09/2022",
+      "userId": 4
+    },
+    {
+      "id": 5,
+      "score": 0,
+      "date": "01/01/2022",
+      "userId": 5
+    },
+    {
+      "id": 6,
+      "score": 0,
+      "date": "01/01/2022",
+      "userId": 6
+    },
+    {
+      "id": 7,
+      "score": 0,
+      "date": "01/01/2022",
+      "userId": 7
+    },
+    {
+      "id": 8,
+      "score": 0,
+      "date": "01/01/2022",
+      "userId": 8
+    },
+    {
+      "id": 9,
+      "score": 0,
+      "date": "01/01/2022",
+      "userId": 9
+    },
+    {
+      "id": 10,
+      "score": 0,
+      "date": "01/01/2022",
+      "userId": 10
+    }
+  ]
+}

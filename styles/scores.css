@@ -1,0 +1,24 @@
+.title {
+    margin: -50px 0 50px 0;
+}
+
+.headers {
+    color: rgb(212, 212, 212);
+}
+
+.headers th {
+    padding: 10px 20px;
+}
+
+.row td{
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.row__impar {
+    background-color: hsl(213, 25%, 36%);
+}
+
+.row__par {
+    background-color: hsl(215, 20%, 44%);
+}
