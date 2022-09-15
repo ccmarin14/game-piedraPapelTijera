@@ -84,6 +84,7 @@ body {
 }
 
 .atras img {
+    filter: invert(90%);
     width: 100%;
     height: 100%;
 }
