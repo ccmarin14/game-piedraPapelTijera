@@ -38,3 +38,17 @@ header img {
     font-weight: 500;
     color: var(--DarkText);
 }
+
+@media (max-width: 450px) {
+    header {
+        margin-top: -5vh;
+    }
+    
+    header img {
+        height: 15vh;
+    }
+    
+    .containerScore {
+        padding: 1.4vh 6%;
+    }
+}
