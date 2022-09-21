@@ -93,7 +93,7 @@ const playAgain = () => {
 const calculateResult = async(you,house) => {
     let result;
     if (house == you) {
-        result = "match";
+        result = "match"
     } else {
         switch (you) {
             case 0:

@@ -1,4 +1,5 @@
 .containerSelect {
+    /*display: none;*/
     display: flex;
     margin-top: 20vh;
     pointer-events: none;

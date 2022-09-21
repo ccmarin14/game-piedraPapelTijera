@@ -34,3 +34,38 @@ header img {
     font-size: 3em;
     color: var(--DarkText);
 }
+
+.containerScores{
+    display: none;
+    margin: 21vh 0;
+    padding: 0 2em;
+}
+
+.score-new {
+    padding: 0 1em;
+    border: solid 3px var(--HeaderOutline);
+    border-radius: 10px;
+}
+
+.score-new p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.score-add {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.user {
+    text-align: center;
+}
+
+.guardar {
+    width: 30%;
+    margin-top: 10px;
+}
