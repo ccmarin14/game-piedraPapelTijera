@@ -5,4 +5,3 @@ const $rows = document.querySelectorAll(".row");
 let rows = [];
 
 document.body.addEventListener('load',viewRegistry());
-

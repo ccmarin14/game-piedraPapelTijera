@@ -64,12 +64,15 @@ const displayResult = () => {
         addScore();
     } else if (result == "lose") {
         $result.firstElementChild.innerHTML = "YOU LOSE";
+        $active[1].classList.add("win");
+        contadorAux = contador;
         contador = 0;
         localStorage.setItem("score", contador);
         $score.children[1].innerHTML = contador;
-        $active[1].classList.add("win");
+        openSave(contadorAux);
     }
     $result.style.display = "inline";
+    
 }
 
 const addScore = () => {
@@ -90,7 +93,7 @@ const playAgain = () => {
     $containerSelect.style.display = "flex";
 }
 
-const calculateResult = async(you,house) => {
+const calculateResult = (you,house) => {
     let result;
     if (house == you) {
         result = "match"
@@ -143,7 +146,6 @@ const orderRegistry = () => {
     rows.sort((a,b) => {
         return b.score - a.score;
     })
-    //console.log(rows);
 }
 
 const viewRegistry = async() => {
@@ -157,3 +159,74 @@ const viewRegistry = async() => {
     rows = [];
 }
 
+const openSave = (contador) => {
+    let exec = false;
+    indexRegistry = verifyRegistry(contador);
+    if (indexRegistry > -1) {
+        beforeSave();
+        exec = true;
+    }
+    indexRegistry += 1;
+    return exec
+}
+
+const beforeSave = () => {
+    $again.style.pointerEvents = "none";
+    $atras.style.pointerEvents = "none";
+    setTimeout(() => {
+        $buttonRules.style.display = "none";
+        $buttonScores.style.display = "none"
+        $header.style.opacity = "0.5";
+        $players.style.opacity = "0.5";
+        $containerScores.style.display = "block";
+    },2000)
+}
+
+const UpdateRegistry = async(index) => {
+    await updateRegistryScore(index);
+    await updateRegistryUser(index,$username);
+}
+
+const verifyRegistry = (contador) => {
+    let index;
+    if (rows.findIndex(({score}) => score = 0) != -1) {
+        index = rows.findIndex(({score}) => score = 0);
+    } else {
+        let rowsReverse = rows.reverse();
+        index = rowsReverse.findIndex(({score}) => score < contador);
+    }
+    return (index);
+}
+
+const updateRegistryScore = async(index) => {  
+    await fetch(`http://localhost:3000/scores/${index}`, {
+        method: 'PATCH',
+        body: JSON.stringify({
+            score: contadorAux,
+            date: getDate(),
+            userId: index,
+        }),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        },
+    })
+}
+
+
+const updateRegistryUser = async(index,username) => {  
+    await fetch(`http://localhost:3000/users/${index}`, {
+        method: 'PATCH',
+        body: JSON.stringify({
+            name: username.value,
+        }),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        },
+    })
+}
+
+const getDate = () => {
+    let hoy = new Date(Date.now());
+    hoy = hoy.toLocaleDateString();
+    return hoy;
+}

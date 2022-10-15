@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "Cristian Marin"
+      "name": "Kratos"
     },
     {
       "id": 2,
@@ -18,88 +18,88 @@
     },
     {
       "id": 5,
-      "name": "Sora Ines"
+      "name": "Sora"
     },
     {
       "id": 6,
-      "name": "AAA"
+      "name": "Boss"
     },
     {
       "id": 7,
-      "name": "AAA"
+      "name": "Daniela"
     },
     {
       "id": 8,
-      "name": "AAA"
+      "name": "Kore tatiana"
     },
     {
       "id": 9,
-      "name": "AAA"
+      "name": "Daniel"
     },
     {
       "id": 10,
-      "name": "AAA"
+      "name": "Luisa"
     }
   ],
   "scores": [
     {
       "id": 1,
-      "score": 10,
-      "date": "14/02/2022",
+      "score": 2,
+      "date": "15/10/2022",
       "userId": 1
     },
     {
       "id": 2,
-      "score": 14,
-      "date": "03/12/2022",
+      "score": 7,
+      "date": "12/10/2022",
       "userId": 2
     },
     {
       "id": 3,
-      "score": 11,
-      "date": "31/10/2022",
+      "score": 10,
+      "date": "24/04/2022",
       "userId": 3
     },
     {
       "id": 4,
-      "score": 15,
-      "date": "14/09/2022",
+      "score": 11,
+      "date": "9/10/2022",
       "userId": 4
     },
     {
       "id": 5,
-      "score": 7,
-      "date": "02/08/2022",
+      "score": 1,
+      "date": "24/04/2022",
       "userId": 5
     },
     {
       "id": 6,
-      "score": 0,
+      "score": 1,
       "date": "01/01/2022",
       "userId": 6
     },
     {
       "id": 7,
-      "score": 0,
-      "date": "01/01/2022",
+      "score": 6,
+      "date": "15/10/2022",
       "userId": 7
     },
     {
       "id": 8,
-      "score": 0,
-      "date": "01/01/2022",
+      "score": 10,
+      "date": "12/10/2022",
       "userId": 8
     },
     {
       "id": 9,
-      "score": 0,
-      "date": "01/01/2022",
+      "score": 4,
+      "date": "15/10/2022",
       "userId": 9
     },
     {
       "id": 10,
       "score": 0,
-      "date": "01/01/2022",
+      "date": "15/10/2022",
       "userId": 10
     }
   ]
