@@ -37,4 +37,3 @@ $again.addEventListener("click", playAgain);
 $guardar.addEventListener("click",()=>{ UpdateRegistry(indexRegistry)});
 
 getRegistry();
-//orderRegistry();

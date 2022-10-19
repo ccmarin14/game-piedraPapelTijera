@@ -185,15 +185,20 @@ const beforeSave = () => {
 const UpdateRegistry = async(index) => {
     await updateRegistryScore(index);
     await updateRegistryUser(index,$username);
+    contadorAux = 0;
 }
 
-const verifyRegistry = (contador) => {
-    let index;
-    if (rows.findIndex(({score}) => score = 0) != -1) {
-        index = rows.findIndex(({score}) => score = 0);
-    } else {
-        let rowsReverse = rows.reverse();
-        index = rowsReverse.findIndex(({score}) => score < contador);
+const verifyRegistry = (cont) => {
+    let index = rows.findIndex(({score}) => score == 0);
+    if (index == -1 && cont > 0 && cont != undefined) {
+        let valor;
+        rows.forEach((element,ind) => {
+            valor = valor == null ? element.score : valor;
+            if (element.score <= valor) {
+                valor = element.score;
+                index = ind;
+            }
+        });
     }
     return (index);
 }

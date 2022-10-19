@@ -18,11 +18,11 @@
     },
     {
       "id": 5,
-      "name": "Sora"
+      "name": "Hercules"
     },
     {
       "id": 6,
-      "name": "Boss"
+      "name": "Zeus"
     },
     {
       "id": 7,
@@ -38,7 +38,7 @@
     },
     {
       "id": 10,
-      "name": "Luisa"
+      "name": "Atreus"
     }
   ],
   "scores": [
@@ -69,13 +69,13 @@
     {
       "id": 5,
       "score": 1,
-      "date": "24/04/2022",
+      "date": "18/10/2022",
       "userId": 5
     },
     {
       "id": 6,
-      "score": 1,
-      "date": "01/01/2022",
+      "score": 2,
+      "date": "18/10/2022",
       "userId": 6
     },
     {
@@ -98,8 +98,8 @@
     },
     {
       "id": 10,
-      "score": 0,
-      "date": "15/10/2022",
+      "score": 4,
+      "date": "18/10/2022",
       "userId": 10
     }
   ]
